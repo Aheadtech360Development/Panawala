@@ -1,0 +1,9 @@
+html{scroll-behavior:smooth}
+.ibtn{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;padding:15px 18px;border-radius:14px;border:1px solid transparent;background:transparent;font-family:Inter,system-ui,sans-serif;font-size:16px;font-weight:500;color:#2A0E17;cursor:pointer;transition:background .15s}
+.ibtn:hover{background:#F3E6E9}
+.ibtn.on{background:#5B1A2D;color:#FFFFFF}
+.mini{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);font-size:15px;color:#F3E6E9}
+.st{font-size:13px;padding:3px 10px;border-radius:999px;font-weight:600}
+.st.a{background:#E0B15E;color:#2A0E17}
+.st.b{background:rgba(255,255,255,0.16);color:#FFFFFF}
+.st.c{background:transparent;border:1px solid rgba(255,255,255,0.4);color:#E6D2CC}

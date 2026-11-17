@@ -1,0 +1,138 @@
+<!--page {"title":"Panawala, CPA Book a consultation","css":[],"js":["config","book"],"path":"book/index.html"}-->
+<div class="pw" style="background:#FBF9F8;min-height:100vh">
+<!--@include header-->
+<main class="dark" style="padding:72px 0 120px">
+  <div class="panel" data-book style="position:relative;max-width:600px;margin:0 auto;padding:44px 40px;display:flex;flex-direction:column;gap:28px;width:calc(100% - 40px)">
+    <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label>Leave this field empty<input type="text" name="pw_hp_ref" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore data-form-type="other" data-hp></label></div>
+    <div data-if="inFlow" style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:6px">
+          <span data-for="bars" data-i="0" style="flex:1;height:4px;border-radius:2px;background:#5B1A2D"></span><span data-for="bars" data-i="1" style="flex:1;height:4px;border-radius:2px;background:#E7DDE0"></span><span data-for="bars" data-i="2" style="flex:1;height:4px;border-radius:2px;background:#E7DDE0"></span><span data-for="bars" data-i="3" style="flex:1;height:4px;border-radius:2px;background:#E7DDE0"></span><span data-for="bars" data-i="4" style="flex:1;height:4px;border-radius:2px;background:#E7DDE0"></span><span data-for="bars" data-i="5" style="flex:1;height:4px;border-radius:2px;background:#E7DDE0"></span>
+        </div>
+        <div data-step-label style="font-size:14px;color:#6B5A5E">Step 1 of 6</div>
+      </div>
+
+    <fieldset data-if="s1" style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:20px">
+        <legend class="serif" style="padding:0;margin-bottom:20px;font-weight:500;font-size:32px;line-height:1.15;color:#2A0E17">Who do you need help for?</legend>
+        
+          <label data-for="whoOpts" data-i="0" class="opt"><input type="radio" name="who" style="position:absolute;opacity:0"><span class="dot"></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600;color:#2A0E17">Individual</span><span style="font-size:14px;color:#6B5A5E">Personal taxes and planning</span></span></label>
+        
+          <label data-for="whoOpts" data-i="1" class="opt"><input type="radio" name="who" style="position:absolute;opacity:0"><span class="dot"></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600;color:#2A0E17">S Corp</span><span style="font-size:14px;color:#6B5A5E">S corporation taxes, planning and reporting</span></span></label>
+        
+          <label data-for="whoOpts" data-i="2" class="opt"><input type="radio" name="who" style="position:absolute;opacity:0"><span class="dot"></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600;color:#2A0E17">C Corp</span><span style="font-size:14px;color:#6B5A5E">C corporation taxes, planning and reporting</span></span></label>
+        
+          <label data-for="whoOpts" data-i="3" class="opt"><input type="radio" name="who" style="position:absolute;opacity:0"><span class="dot"></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600;color:#2A0E17">Partnership</span><span style="font-size:14px;color:#6B5A5E">Partnership taxes, planning and reporting</span></span></label>
+        
+          <label data-for="whoOpts" data-i="4" class="opt"><input type="radio" name="who" style="position:absolute;opacity:0"><span class="dot"></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600;color:#2A0E17">Other / Not sure yet</span><span style="font-size:14px;color:#6B5A5E">We will sort it out together</span></span></label>
+        
+        <div data-if="e1" hidden class="err" role="alert">Choose one to continue.</div>
+      </fieldset>
+
+    <fieldset data-if="s2" hidden style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+        <legend class="serif" style="padding:0;margin-bottom:8px;font-weight:500;font-size:32px;line-height:1.15;color:#2A0E17">What do you need?</legend>
+        <div style="font-size:15px;color:#6B5A5E;margin-bottom:6px">Choose all that apply.</div>
+        
+          <label data-for="svcOpts" data-i="0" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Tax preparation</span></label>
+        
+          <label data-for="svcOpts" data-i="1" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Tax Planning &amp; Advisory</span></label>
+        
+          <label data-for="svcOpts" data-i="2" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Tax Projection</span></label>
+        
+          <label data-for="svcOpts" data-i="3" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Bookkeeping</span></label>
+        
+          <label data-for="svcOpts" data-i="4" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Accounting</span></label>
+        
+          <label data-for="svcOpts" data-i="5" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Financial Statements</span></label>
+        
+          <label data-for="svcOpts" data-i="6" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Payroll</span></label>
+        
+          <label data-for="svcOpts" data-i="7" class="opt"><input type="checkbox" style="position:absolute;opacity:0"><span class="dot" style="border-radius:4px"></span><span style="font-size:17px;font-weight:600;color:#2A0E17">Not sure yet</span></label>
+        
+        <div data-if="e2" hidden class="err" role="alert">Choose at least one, or Not sure yet.</div>
+      </fieldset>
+
+    <div data-if="s3" hidden style="display:flex;flex-direction:column;gap:16px">
+        <h1 class="serif" style="margin:0;font-weight:500;font-size:32px;line-height:1.15;color:#2A0E17">Which industry is it?</h1>
+        <div style="font-size:15px;color:#6B5A5E">Pick the closest one.</div>
+        <div role="group" aria-label="Industry" style="display:flex;flex-wrap:wrap;gap:10px">
+          
+            <button data-for="indOpts" data-i="0" type="button" class="chip" aria-pressed="false">Real Estate &amp; Property Investors</button>
+          
+            <button data-for="indOpts" data-i="1" type="button" class="chip" aria-pressed="false">Construction &amp; Contractors</button>
+          
+            <button data-for="indOpts" data-i="2" type="button" class="chip" aria-pressed="false">Creators, Influencers &amp; Digital Businesses</button>
+          
+            <button data-for="indOpts" data-i="3" type="button" class="chip" aria-pressed="false">Small Businesses &amp; Entrepreneurs</button>
+          
+            <button data-for="indOpts" data-i="4" type="button" class="chip" aria-pressed="false">High-Income Individuals &amp; Investors</button>
+          
+            <button data-for="indOpts" data-i="5" type="button" class="chip" aria-pressed="false">Retail &amp; E-Commerce</button>
+          
+            <button data-for="indOpts" data-i="6" type="button" class="chip" aria-pressed="false">Healthcare, Medical &amp; Dental Practices</button>
+          
+            <button data-for="indOpts" data-i="7" type="button" class="chip" aria-pressed="false">Manufacturing &amp; Distribution</button>
+          
+            <button data-for="indOpts" data-i="8" type="button" class="chip" aria-pressed="false">Technology &amp; Software Companies</button>
+          
+            <button data-for="indOpts" data-i="9" type="button" class="chip" aria-pressed="false">Research &amp; Development (R&amp;D)</button>
+          
+            <button data-for="indOpts" data-i="10" type="button" class="chip" aria-pressed="false">Transportation &amp; Trucking</button>
+          
+            <button data-for="indOpts" data-i="11" type="button" class="chip" aria-pressed="false">Professional Services</button>
+          
+            <button data-for="indOpts" data-i="12" type="button" class="chip" aria-pressed="false">Restaurants &amp; Hospitality</button>
+          
+            <button data-for="indOpts" data-i="13" type="button" class="chip" aria-pressed="false">Agriculture &amp; Farming</button>
+          
+            <button data-for="indOpts" data-i="14" type="button" class="chip" aria-pressed="false">Salons, Spas &amp; Beauty Professionals</button>
+          
+            <button data-for="indOpts" data-i="15" type="button" class="chip" aria-pressed="false">Other or not sure</button>
+          
+        </div>
+        <div data-if="e3" hidden class="err" role="alert">Choose an industry, or Other or not sure.</div>
+      </div>
+
+    <div data-if="s4" hidden style="display:flex;flex-direction:column;gap:20px">
+        <h1 class="serif" style="margin:0;font-weight:500;font-size:32px;line-height:1.15;color:#2A0E17">Tell us about your situation.</h1>
+        <div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="ent">Business type</label>
+          <select class="inp" id="ent"><option value="">Choose one</option><option>Sole proprietor or self-employed</option><option>LLC</option><option>S corporation</option><option>C corporation</option><option>Partnership</option><option>Not sure</option><option>Personal only</option></select></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="st">State</label><input class="inp" id="st" type="text" autocomplete="address-level1"></div>
+        <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:10px"><legend class="lbl" style="padding:0;margin-bottom:8px">Do you have employees?</legend>
+          <div style="display:flex;gap:10px"><button data-for="empOpts" data-i="0" type="button" class="chip" aria-pressed="false">Yes</button><button data-for="empOpts" data-i="1" type="button" class="chip" aria-pressed="false">No</button></div></fieldset>
+        <div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="sit">Anything we should know? (optional)</label><textarea class="inp" id="sit" rows="4"></textarea></div>
+      </div>
+
+    <div data-if="s5" hidden style="display:flex;flex-direction:column;gap:20px">
+        <h1 class="serif" style="margin:0;font-weight:500;font-size:32px;line-height:1.15;color:#2A0E17">How do we reach you?</h1>
+        <div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="nm">Full name</label><input class="inp" id="nm" type="text" autocomplete="name"><div data-if="eName" hidden class="err" role="alert">Enter your name.</div></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="em">Email</label><input class="inp" id="em" type="email" autocomplete="email"><div data-if="eEmail" hidden class="err" role="alert">Enter an email like name@example.com.</div></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="ph">Phone</label><input class="inp" id="ph" type="tel" autocomplete="tel"><div data-if="ePhone" hidden class="err" role="alert">Enter a phone number.</div></div>
+        <div style="font-size:14px;line-height:1.5;color:#6B5A5E">We use this only to confirm your booking and prepare for the meeting. Please do not include Social Security numbers or tax documents.</div>
+      </div>
+
+    <div data-if="s6" hidden style="display:flex;flex-direction:column;gap:20px">
+        <h1 class="serif" style="margin:0;font-weight:500;font-size:32px;line-height:1.15;color:#2A0E17">Pick a time.</h1>
+        <div style="font-size:15px;color:#6B5A5E">Times are in your local time zone.</div>
+        <div data-slot-status role="status" hidden style="font-size:15px;color:#6B5A5E"></div>
+        <div data-days role="group" aria-label="Day" style="display:flex;flex-wrap:wrap;gap:10px"></div>
+        <div data-times role="group" aria-label="Time" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px"></div>
+        <div data-if="e6" hidden class="err" role="alert">Pick a day and a time.</div>
+        <div data-submit-error hidden class="err" role="alert"></div>
+      </div>
+
+    <div data-if="inFlow" style="display:flex;gap:14px;align-items:center;margin-top:8px">
+        <button data-if="canBack" hidden type="button" class="btn2">Back</button>
+        <button data-next type="button" class="btn" style="flex:1">Continue</button>
+      </div>
+
+    <div data-if="done" hidden style="background:#FFFFFF;border:1px solid #CFC2C6;border-radius:12px;padding:40px 34px;display:flex;flex-direction:column;gap:18px;box-shadow:0 18px 44px rgba(58,15,31,0.10)">
+        <div class="dr"></div>
+        <h1 class="serif" style="margin:0;font-weight:500;font-size:34px;line-height:1.15;color:#2A0E17">You are booked.</h1>
+        <p class="lead" style="margin:0;font-size:18px">You are booked for <strong data-when></strong>. We sent a calendar invite to <strong data-email></strong>.</p>
+        <p class="body" style="margin:0">The invite includes a video link. We have read your answers and will start from there.</p>
+        <div class="tint" style="border-radius:8px;padding:16px 18px;font-size:15px;line-height:1.6;color:#43343A"><strong>What to have ready:</strong> last year’s return if you have it, and a rough picture of income and expenses.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="/">Back to home</a><a class="btn2" href="/contact/">Need to change something?</a></div>
+      </div>
+  </div>
+</main>
+<!--@include footer-->
+</div>

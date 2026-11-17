@@ -1,0 +1,14 @@
+{
+  "name": "panawala-cpa-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panawala, CPA marketing site (static) with Google Apps Script form backend",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && npx --yes serve@14.2.4 dist -l 4173"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
