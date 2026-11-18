@@ -64,6 +64,7 @@ for (const file of readdirSync(join(SRC, 'pages'))) {
   const m = raw.match(/^<!--page (\{.*\})-->\r?\n/);
   if (!m) throw new Error(`Missing page meta in ${file}`);
   const meta = JSON.parse(m[1]);
+  if (meta.draft) continue; // kept in src, not published
   const body = raw.slice(m[0].length)
     .replace(/<!--@include header(?: active="([^"]*)")?-->/g, (_, a) => renderHeader(a || ''))
     .replace(/<!--@include footer-->/g, footer);

@@ -13,3 +13,4 @@
 .q{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#43343A}
 .q::before{content:"";flex:0 0 8px;height:8px;margin-top:7px;background:#B9812C;transform:rotate(45deg)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
+.icard .himg img{object-position:50% 25%}

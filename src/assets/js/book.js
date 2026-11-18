@@ -3,7 +3,6 @@
   'use strict';
 
   var TOTAL = 6;
-  var NOT_SURE_SVC = 7; // "Not sure yet" is exclusive with the other services
 
   document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[data-book]');
@@ -54,6 +53,8 @@
       ind: el.ind.map(function (b) { return b.textContent.trim(); }),
       emp: el.emp.map(function (b) { return b.textContent.trim(); })
     };
+    // "Not sure yet" is exclusive with the other services. Found by label so the list can change.
+    var NOT_SURE_SVC = LABELS.svc.indexOf('Not sure yet');
 
     var s = {
       step: 1, who: -1, svcs: [], ind: -1, emp: -1, tried: false, done: false,
