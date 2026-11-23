@@ -1,8 +1,8 @@
 <!--page {"title":"Panawala, CPA Book a consultation","css":[],"js":["config","book"],"path":"book/index.html"}-->
 <div class="pw" style="background:#FBF9F8;min-height:100vh">
 <!--@include header-->
-<main class="dark" style="padding:72px 0 120px">
-  <div class="panel" data-book style="position:relative;max-width:600px;margin:0 auto;padding:44px 40px;display:flex;flex-direction:column;gap:28px;width:calc(100% - 40px)">
+<main class="dark" style="padding:clamp(36px,6vw,72px) 0 clamp(60px,10vw,120px)">
+  <div class="panel" data-book style="position:relative;max-width:600px;margin:0 auto;padding:clamp(22px,3.67vw,44px) clamp(20px,3.33vw,40px);display:flex;flex-direction:column;gap:28px;width:calc(100% - 40px)">
     <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label>Leave this field empty<input type="text" name="pw_hp_ref" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore data-form-type="other" data-hp></label></div>
     <div data-if="inFlow" style="display:flex;flex-direction:column;gap:12px">
         <div style="display:flex;gap:6px">
@@ -124,7 +124,7 @@
         <button data-next type="button" class="btn" style="flex:1">Continue</button>
       </div>
 
-    <div data-if="done" hidden style="background:#FFFFFF;border:1px solid #CFC2C6;border-radius:12px;padding:40px 34px;display:flex;flex-direction:column;gap:18px;box-shadow:0 18px 44px rgba(58,15,31,0.10)">
+    <div data-if="done" hidden style="background:#FFFFFF;border:1px solid #CFC2C6;border-radius:12px;padding:clamp(20px,3.33vw,40px) clamp(20px,2.83vw,34px);display:flex;flex-direction:column;gap:18px;box-shadow:0 18px 44px rgba(58,15,31,0.10)">
         <div class="dr"></div>
         <h1 class="serif" style="margin:0;font-weight:500;font-size:34px;line-height:1.15;color:#2A0E17">You are booked.</h1>
         <p class="lead" style="margin:0;font-size:18px">You are booked for <strong data-when></strong>. We sent a calendar invite to <strong data-email></strong>.</p>

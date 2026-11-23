@@ -90,7 +90,7 @@ a.rule:hover{transform:translateX(4px);border-color:#D4B7BF;box-shadow:0 14px 34
 .menu{display:none}
 @media(max-width:1000px){.bento{grid-template-columns:repeat(2,1fr)}.b2,.b3,.b4{grid-column:span 2}}
 @media(max-width:900px){.nav,.hdrphone{display:none !important}.menu{display:inline-flex !important}.hero{gap:40px}.rule{grid-template-columns:1fr}}
-@media(max-width:720px){.hdrbook{display:none !important}.sticky{display:flex}.c,.cn{padding:0 20px}.sec{padding-top:64px !important;padding-bottom:64px !important}.bento{grid-template-columns:1fr}.b2,.b3,.b4{grid-column:span 1}.cell{min-height:0}}
+@media(max-width:720px){.hdrbook{display:none !important}.sticky{display:flex}.c,.cn{padding:0 20px}.bento{grid-template-columns:1fr}.b2,.b3,.b4{grid-column:span 1}.cell{min-height:0}}
 
 .mini{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);font-size:15px;color:#F3E6E9}
 .st{font-size:13px;padding:3px 10px;border-radius:999px;font-weight:600}
@@ -154,3 +154,29 @@ body{margin:0}
   .dark.split .hmedia .himg.bare{padding:0 var(--gut) 40px}
 }
 @media(max-width:720px){.dark.split{--gut:20px}}
+/* Mobile: tighter type and spacing (inline paddings/gaps are fluid via clamp) */
+@media(max-width:720px){
+  .pw .h1{font-size:32px !important;line-height:1.08}
+  .pw .h2{font-size:27px !important;line-height:1.15}
+  .pw .h3{font-size:20px}
+  .pw .lead{font-size:17px !important;line-height:1.55}
+  .pw .body{font-size:16px}
+  .pw [style*="font-size:30px"],.pw [style*="font-size:32px"],.pw [style*="font-size:34px"],.pw [style*="font-size:36px"],.pw [style*="font-size:38px"]{font-size:25px !important;line-height:1.15 !important}
+  .pw [style*="font-size:640px"]{font-size:340px !important}
+  .cell{padding:24px}
+  .cell .t1{font-size:24px}
+  .cell .glyph{font-size:130px}
+  .rule{padding:20px;gap:10px}
+  .rule .t{font-size:22px}
+  .dark.split{--hgap:28px}
+  .trust .c>div{padding:16px 0 !important;border-left:0 !important;border-top:1px solid #EADFE2}
+  .trust .c>div:first-child{border-top:0}
+  [data-c="Faq"] [data-for="faqs"]{padding:0 20px !important;border-radius:16px !important}
+  [data-c="Faq"] button{padding:18px 0 !important;gap:14px !important}
+  [data-c="Faq"] button .serif{font-size:18px !important}
+  [data-c="Faq"] button [aria-hidden="true"]{flex-basis:32px !important;height:32px !important}
+  [data-c="Faq"] [data-if="f.open"]{padding:0 0 20px 0 !important;font-size:16px !important}
+  [data-c="CtaBand"] p{font-size:17px !important}
+  [data-c="CtaBand"] span[aria-hidden="true"]:not(.ar){display:none}
+  [data-c="CtaBand"] .btnL,[data-c="CtaBand"] .btnW{width:100%}
+}
