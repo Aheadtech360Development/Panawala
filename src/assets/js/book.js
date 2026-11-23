@@ -61,9 +61,10 @@
       days: null, day: -1, time: -1, loadingSlots: false, slotsError: false, submitting: false
     };
 
-    // Pre-select "who" when arriving from the home page picker (?who=0..4)
+    // Arriving from the home page picker (?who=0..4): step 1 is already answered, so open on step 2.
+    // Back still returns to step 1 with the choice selected.
     var q = new URLSearchParams(location.search).get('who');
-    if (q !== null && /^\d$/.test(q) && +q < LABELS.who.length) s.who = +q;
+    if (q !== null && /^\d$/.test(q) && +q < LABELS.who.length) { s.who = +q; s.step = 2; }
 
     function emailOk() { return window.PW_API.emailOk(el.email.value.trim()); }
     function valid(step) {
