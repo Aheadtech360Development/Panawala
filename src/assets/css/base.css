@@ -133,22 +133,23 @@ body{margin:0}
 .himg.hhero::before{display:none}
 .himg.hhero img{object-fit:contain}
 .himg.hhero.bare{background:none;border-radius:0;overflow:visible}
-/* Split hero: the image is part of the section, edge to edge (right half on desktop, full width below text on smaller screens) */
+/* Split hero: the image runs the full height of the section and fills the right half of the
+   1240px content width (lined up with the header's right edge); below text on smaller screens */
 .himg.hhero.portrait{aspect-ratio:720/874}
 .dark.split{--gut:40px}
 .hmedia{flex:0 1 500px;min-width:300px;width:100%}
 @media(min-width:981px){
-  .dark.split{min-height:min(50vw,760px);display:flex;align-items:center}
+  .dark.split{min-height:calc((min(100vw, 1240px) - 80px) / 2 - 16px);display:flex;align-items:center}
   .dark.split>.c{width:100%}
   .dark.split .hero>:first-child{max-width:calc(50% - 32px)}
-  .dark.split .hmedia{position:absolute;top:0;right:0;bottom:0;width:min(50vw,760px);min-width:0;flex:none}
+  .dark.split .hmedia{position:absolute;top:0;bottom:0;right:max(40px, calc((100% - 1240px) / 2 + 40px));width:calc((min(100%, 1240px) - 80px) / 2 - 16px);min-width:0;flex:none}
   .dark.split .hmedia .himg{height:100%;aspect-ratio:auto;border-radius:0}
   .dark.split .hmedia .himg img{object-fit:cover}
   .dark.split .hmedia .himg.bare img{object-fit:contain;padding:48px}
 }
 @media(max-width:980px){
   .dark.split{padding-bottom:0 !important}
-  .dark.split .hmedia{flex:none;min-width:0;width:calc(100% + 2 * var(--gut));margin:0 calc(-1 * var(--gut))}
+  .dark.split .hmedia{flex:none;min-width:0;width:min(calc(100% + 2 * var(--gut)), 600px);margin:0 max(calc(-1 * var(--gut)), calc((100% - 600px) / 2))}
   .dark.split .hmedia .himg{border-radius:0}
   .dark.split .hmedia .himg.bare{padding:0 var(--gut) 40px}
 }
